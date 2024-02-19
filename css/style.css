@@ -34,7 +34,7 @@ nav {
 }
 li a {
     display: block;
-    color: green;
+    color: rgb(70, 175, 245);
     text-align: center;
     text-decoration: none;
     transition-duration: 0.5s;
@@ -70,7 +70,7 @@ section {
     width: 70%;
     height: 659px;
     left: 0;
-    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(255,255,255,1) 47%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(29, 231, 29, 0.678) 0%, rgba(255,255,255,1) 47%, rgba(29, 231, 29, 0.678) 100%);
 }
 
 .title {
