@@ -1,37 +1,37 @@
 * {
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    align-items: center;
-    justify-self: center;
 }
+
 .container {
-    border: 2px solid black;
-    margin: 0;
-    padding: 5px;
+    border: 5px solid rgb(185, 181, 181);
     width: 960px;
     position: absolute;
     left: 50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 nav {
+    top:-16px;
     position: relative;
+    margin: 0;
     width: 100%;
-    height: 80px;
+    height: 50px;
+    background-color: rgb(229, 178, 231);
 }
 
 .nav li {
-    float: left;
-    background-color: rgb(201, 156, 214);
-    width: 150px;
-    height: 50px;
-    list-style: none;
-    line-height: 50px;
-    position: relative;
-    text-indent: 15px;
+    display:inline-block;
+    padding:10px;
+    font-size:20px;
+    color:white;
+    text-decoration:none;
 }
 
+.go{
+    background-color: rgb(87, 212, 235);
+    cursor: pointer;
+}
 li a {
     display: block;
     color: green;
@@ -45,63 +45,162 @@ li a:hover {
     color: yellow;
     font-size: 20px;
 }
-
+#contacct{
+    padding-right: 80px;
+}
 header {
     position: relative;
     width: 100%;
     height: 180px;
+    top:-16px;
 }
 
 .center {
     position: relative;
+    top:-16px;
     width: 100%;
     height: 650px;
     margin: 1px 0;
-    background-image: linear-gradient(to left,aqua);
 }
-.title{
-    color:  red;
-    margin-top: 15px;
-    font-size: 25px;
-    font-weight: 900;
-}
-.content{
-    position: absolute;
-    width: 50%;
-}
-.information{
-    width: 50%;
-    position: absolute;
-    right: 0;
-    border: 1px solid black;
-    border-radius: 5%;
-}
+
 section {
+    margin-top: 2px;
     position: absolute;
     max-width: 960px;
     width: 70%;
+    height: 659px;
     left: 0;
-    border: 1px solid black;
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(255,255,255,1) 47%, rgba(0,212,255,1) 100%);
+}
+
+.title {
+    color: red;
+    margin: 15px 0;
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.content {
+    position: absolute;
+    width: 50%;
+    text-align: justify;
+    text-indent: 20px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.border {
+    position: absolute;
+    width: 50%;
+    height: 380px;
+    right: 0;
+    border-radius: 5%;
+}
+.information{
+    top:10px;
+    left: 30px;
+    width: 80%;
+    height: 360px;
+    position: absolute;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(46, 45, 45, 0.5);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.shadow{
+    max-width: 98%;
+    filter: drop-shadow(0px 9px rgba(128, 128, 128,0.5));
+    padding: 0px 3px;
+}
+.title_in{
+    position: absolute;
+    background-color: rgba(0,212,255,.1);
+    font-size: 20px;
+    top:-13px;
+    left: 10px;
+}
+.name{
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+    top: 50px;
+}
+.email{
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+    top:120px;
+}
+.gender{
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+    top:180px;
+}
+.submit{
+    position: absolute;
+    font-size: 20px;
+    left: 40px;
+    top:280px;
+    font-weight: 600;
+    border:none;
+    background-color: rgba(128, 128, 128,0.5);
+    border-radius: 10px;
+    box-shadow: 2px 4px rgba(43, 42, 42, 0.5);
+    cursor: pointer;
+}
+.reset{
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+    left: 170px;
+    top:280px;
+    font-weight: 600;
+    border:none;
+    background-color: rgba(128, 128, 128,0.5);
+    border-radius: 10px;
+    box-shadow: 2px 4px rgba(43, 42, 42, 0.5);
+}
+.input_in{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(128, 128, 128,0.5);
+}
+.tt {
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 2px 3px 1px rgb(214, 185, 19);
+    height: 40px;
+    margin-bottom: 10px;
+    border-bottom: 3px dotted brown;
 }
 
 aside {
     position: absolute;
     width: 30%;
+    height: 646px;
     right: 0;
-    border: 1px solid black;
+    margin: 2px;
+    background-color: white;
+    border: 7px solid rgb(150, 141, 141);
 }
 
 footer {
     position: relative;
     width: 100%;
-    height: 50px;
-    background-color: aqua;
-    margin-left: auto;
-    margin-right: auto;
-    padding: auto;
+    height: 60px;
+    background-color: rgb(173, 207, 94);
     text-align: center;
     align-items: center;
     justify-self: center;
+    text-indent: 20px;
 }
 
 .footer_left {
@@ -110,4 +209,5 @@ footer {
 
 .footer_right {
     float: right;
+    margin-right:20px
 }
